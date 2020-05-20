@@ -13,7 +13,6 @@ flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 # flags.DEFINE_boolean('tiny', True, 'yolov3 or yolov3-tiny')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 
-
 def main(_argv):
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
     if len(physical_devices) > 0:
